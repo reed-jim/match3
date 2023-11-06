@@ -18,9 +18,9 @@ public class Level1Map : LevelMap
     {
         BlockType[] result = {
             basic1, basic2, basic3, basic4,
-            basic5, basic1, basic1, basic2,
-            basic5, basic1, basic1, basic2,
-            basic5, basic1, basic1, basic2
+            basic5, basic1, basic1, basic5,
+            basic5, basic3, basic1, basic2,
+            basic2, basic1, basic3, basic2
         };
 
         return result;

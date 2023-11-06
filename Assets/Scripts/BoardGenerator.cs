@@ -13,7 +13,7 @@ public class BoardGenerator : MonoBehaviour
         int index;
         Vector2 position;
         Vector2 blockSize = blockRenderer.bounds.size;
-        Vector2 blockGap = 0.0f * blockRenderer.bounds.size;
+        Vector2 blockGap = 0.12f * blockRenderer.bounds.size;
         Vector2 distance = (Vector2)blockRenderer.bounds.size + blockGap;
 
         Vector2[] result = new Vector2[numTile];
@@ -37,7 +37,8 @@ public class BoardGenerator : MonoBehaviour
                     Position = position,
                     TileType = levelMap.TileTypes[index],
                     BlockType = levelMap.BlockTypes[index],
-                    BlockIndex = index
+                    BlockIndex = index,
+                    Priority = TilePriority.Last
                 };
             }
         }

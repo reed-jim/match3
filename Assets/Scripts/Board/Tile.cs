@@ -12,6 +12,7 @@ public class Tile
     private TileType _tileType;
     private BlockType _blockType;
     private int _blockIndex;
+    private TilePriority _priority;
 
     public int Index
     {
@@ -46,5 +47,10 @@ public class Tile
     public int BlockIndex
     {
         get => _blockIndex; set => _blockIndex = value;
+    }
+
+    public TilePriority Priority
+    {
+        get => _priority; set => _priority = value;
     }
 }
